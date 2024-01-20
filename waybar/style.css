@@ -1,31 +1,14 @@
 * {
     all: unset;
     border: none;
-    border-radius: 4;
+    border-radius: 4px;
     font-family: JetBrains Mono;
     font-size: 13px;
     min-height: 0;
 }
 
 window#waybar {
-    background: @theme_base_color;
-    background-color: rgba(43, 48, 59, 0.9);
-    color: @theme_text_color;
-    transition-property: background-color;
-    transition-duration: .5s;
-    border-radius: 0;
-}
-
-window#waybar.hidden {
-    opacity: 0.2;
-}
-
-tooltip {
-    background: rgba(43, 48, 59, 0.5);
-    border: 1px solid rgba(100, 114, 125, 0.5);
-}
-tooltip label {
-  color: @theme_text_color;
+    background-color: #0F0F0F;
 }
 
 #workspaces button {
@@ -58,17 +41,10 @@ tooltip label {
 #battery,
 #cpu,
 #memory,
-#disk,
-#temperature,
-#backlight,
 #network,
-#pulseaudio,
-#custom-weather,
 #tray,
-#mode,
-#idle_inhibitor,
-#custom-notification,
-#sway-scratchpad,
+#wireplumber,
+#language,
 #mpd {
     padding: 0 10px;
     margin: 6px 3px;
@@ -90,36 +66,8 @@ tooltip label {
     margin-right: 0;
 }
 
-#clock {
-    background-color: #ff5555;
-    color: #282a36;
-}
-
-#battery {
-    background-color: #44475a;
-    color: #f8f8f2;
-}
-
-#battery.charging, #battery.plugged {
-    color: #ffffff;
-    background-color: #26A65B;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: #000000;
-    }
-}
-
 #battery.critical:not(.charging) {
     background-color: #f53c3c;
-    color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 label:focus {
@@ -127,22 +75,15 @@ label:focus {
 }
 
 #cpu {
-    background-color: #f1fa8c;
-    color: #282a36;
+    background-color: #1B4242;
 }
 
 #memory {
-    background-color: #f1fa8c;
-    color: #282a36;
-}
-
-#backlight {
-    background-color: #90b1b1;
+    background-color: #1B4242;
 }
 
 #network {
-    background-color: #50fa7b;
-    color: #282a36;
+    background-color: #1B4242;
 }
 
 #network.disconnected {
@@ -150,8 +91,7 @@ label:focus {
 }
 
 #wireplumber {
-    background-color: #fff0f5;
-    color: #000000;
+    background-color: #232D3F;
 }
 
 #wireplumber.muted {
@@ -181,39 +121,3 @@ label:focus {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
 }
-
-
-#idle_inhibitor {
-    background-color: #44475a;
-    color: #f8f8f2;
-}
-
-#idle_inhibitor.activated {
-    background-color: #f8f8f2;
-    color: #44475a;
-}
-
-#language {
-    background-color: #f8f8f2;
-    color: #282a36;
-    padding: 0 5px;
-    margin: 6px 3px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    background-color: #97e1ad;
-    color: #000000;
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
-    background: rgba(0, 0, 0, 0.2);
-}
-
