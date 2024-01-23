@@ -20,7 +20,7 @@
     // Modules configuration
     "hyprland/workspaces": {
         "all-outputs": true,
-        "persistent_workspaces":  {
+        "persistent-workspaces":  {
             "1": [],
             "2": [],
             "3": [],
