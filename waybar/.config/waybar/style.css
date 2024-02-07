@@ -61,10 +61,6 @@ window#waybar {
     background-color: #fb4934;
 }
 
-#tray {
-    background-color: #bd93f9
-}
-
 #tray > .passive {
     -gtk-icon-effect: dim;
 }
