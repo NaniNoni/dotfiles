@@ -21,7 +21,7 @@
     },
     "clock": {
         "timezone": "Europe/Luxembourg",
-        "format": "{:%F %R}"
+        "format": "{:%D %R}"
     },
     "battery": {
         "states": {
