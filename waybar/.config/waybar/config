@@ -9,8 +9,8 @@
         "tray"
     ],
     "modules-right": [
-        "wireplumber",
         "battery",
+        "wireplumber",
         "clock"
     ],
 
@@ -29,7 +29,7 @@
             "crictical": 15
         },
         "format": "{capacity}%",
-        "format-charging": "\uf0e7 {capacity}%",
+        "format-charging": "{capacity}% \uf0e7",
         "format-alt": "{time}"
     }
 }
