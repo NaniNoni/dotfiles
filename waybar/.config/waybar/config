@@ -1,7 +1,6 @@
 {
     "layer": "top",
     "position": "bottom",
-    "height": 20, // Waybar height (to be removed for auto height)
     "spacing": 3, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
@@ -15,6 +14,19 @@
     ],
 
     // Modules configuration
+    "hyprland/workspaces": {
+        "persistent-workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": [],
+            "6": [],
+            "7": [],
+            "8": [],
+            "9": []
+        }
+    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
