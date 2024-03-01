@@ -49,15 +49,11 @@ window#waybar {
 }
 
 #battery.critical:not(.charging) {
-    background-color: #f53c3c;
-}
-
-#network.disconnected {
-    background-color: #fb4934;
+    color: #fb4934;
 }
 
 #wireplumber.muted {
-    background-color: #fb4934;
+    color: #fb4934;
 }
 
 #tray > .passive {
