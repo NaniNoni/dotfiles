@@ -17,8 +17,13 @@ window#waybar {
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+    background-color: #282828; 
+    /* background: rgba(0, 0, 0, 0.2); */
     box-shadow: inset 0 -2px;
+}
+
+#workspaces button.visible {
+    background-color: #665c54;
 }
 
 #workspaces button.urgent {
