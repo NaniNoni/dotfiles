@@ -6,6 +6,9 @@ set $down j
 set $up k
 set $right l
 
+exec /usr/lib/polkit-kde-authentication-agent-1
+exec qbittorrent
+
 # Application vars
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
@@ -44,6 +47,11 @@ exec swayidle -w \
 #
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
+
+input type:keyboard {
+    xkb_layout us,pl
+    xkb_options grp:rctrl_toggle
+}
 
 # Application shortcuts
 bindsym $mod+Return exec $term
