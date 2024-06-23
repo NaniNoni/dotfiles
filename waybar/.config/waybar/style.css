@@ -1,29 +1,27 @@
 * {
     all: unset;
     border: none;
-    font-family: Fira Code, monospace;
+    font-family: Source Code Pro, monospace;
     font-size: 11px;
     min-height: 0;
 }
 
 window#waybar {
-    background-color: #282828;
-    color: #ebdbb2;
+    background-color: #323232;
+    color: #ffffff;
 }
 
 #workspaces button {
     padding: 0 0.5em;
-    background-color: #3c3836;
 }
 
 #workspaces button:hover {
-    background-color: #282828; 
-    /* background: rgba(0, 0, 0, 0.2); */
+    background-color: #1e1e1e;
     box-shadow: inset 0 -2px;
 }
 
 #workspaces button.visible {
-    background-color: #665c54;
+    background-color: #5c5c5c;
 }
 
 #workspaces button.urgent {
@@ -33,8 +31,7 @@ window#waybar {
 #clock,
 #battery,
 #tray,
-#wireplumber,
-#language {
+#wireplumber {
     margin: 6px 3px;
     background-color: transparent;
 }
