@@ -1,0 +1,22 @@
+{
+    "auto_update": false,
+    "cursor_blink": false,
+    "scrollbar": {
+        "show": "never" 
+    },
+
+    "tabs": {
+        "git_status": true
+    },
+
+    // LSP
+    "lsp": {
+        "rust-analyzer": {
+            "initialization_options": {
+                "check": {
+                    "command": "clippy"
+                }
+            }
+        }
+    }
+}
