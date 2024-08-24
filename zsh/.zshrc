@@ -1,4 +1,4 @@
-[ "$(tty)" = "/dev/tty1" ] && exec Hyprland
+[ "$(tty)" = "/dev/tty1" ] && exec sway
 
 eval $(thefuck --alias)
 eval "$(atuin init zsh)"

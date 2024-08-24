@@ -1,0 +1,11 @@
+ignore-empty-password
+show-failed-attempts
+daemonize # Detach from the controlling terminal after locking.
+
+#
+# Apppearance
+#
+image = "$HOME/Pictures/wallpapers/code.png"
+show-keyboard-layout
+indicator-caps-lock
+

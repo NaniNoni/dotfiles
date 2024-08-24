@@ -40,7 +40,7 @@ index = 17
 color = '#db4b4b'
 
 [font]
-normal = { family = "Fira Code", style = "monospace" }
+normal = { family = "Source Code Pro", style = "monospace" }
 
 [window]
 opacity = 0.9
