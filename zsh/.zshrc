@@ -5,3 +5,5 @@ eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
 
 export MAKEFLAGS=-j$(nproc)
+
+. "$HOME/.atuin/bin/env"
